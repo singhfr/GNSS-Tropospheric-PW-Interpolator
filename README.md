@@ -390,7 +390,3 @@ This is a complete MVP built for hackathon submission, demonstrating:
 - **Comprehensive testing** and CI/CD pipeline
 
 **Key Innovation**: Real-time GNSS tropospheric water vapor interpolation with uncertainty quantification for meteorological forecasting.
-#   G N S S - T r o p o s p h e r i c - P W - I n t e r p o l a t o r 
- 
- #   G N S S - T r o p o s p h e r i c - P W - I n t e r p o l a t o r  
- 
