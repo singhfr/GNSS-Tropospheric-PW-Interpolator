@@ -18,10 +18,25 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Configure CORS
+# Configure CORS for development and production
+allowed_origins = [
+    "http://localhost:3000",
+    "http://localhost:3001", 
+    "http://frontend:3000",
+    "https://gnss-frontend.onrender.com",  # Render frontend URL
+    "https://*.onrender.com",  # Allow all Render subdomains
+]
+
+# Add environment-specific origins
+if os.getenv("ENVIRONMENT") == "production":
+    # Add your custom domain here if you have one
+    frontend_url = os.getenv("FRONTEND_URL")
+    if frontend_url:
+        allowed_origins.append(frontend_url)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001", "http://frontend:3000"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -1,0 +1,34 @@
+services:
+  # Backend API Service
+  - type: web
+    name: gnss-api
+    runtime: python3
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONPATH
+        value: /opt/render/project/src/backend
+      - key: ENVIRONMENT
+        value: production
+    healthCheckPath: /health
+    
+  # Frontend Web Service
+  - type: web
+    name: gnss-frontend
+    runtime: node
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: gnss-api
+          property: host
+    
+databases:
+  # Optional: Add PostgreSQL if needed for production data
+  # - name: gnss-db
+  #   databaseName: gnss_production
+  #   user: gnss_user
