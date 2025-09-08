@@ -13,8 +13,8 @@ A comprehensive machine learning platform for real-time atmospheric precipitable
 Get the full system running with a single command:
 
 ```bash
-git clone https://github.com/your-username/gnss-dashboard.git
-cd gnss-dashboard
+git clone https://github.com/your-username/gnss-tropospheric-pw-interpolator.git
+cd gnss-tropospheric-pw-interpolator
 docker-compose up --build
 ```
 
@@ -59,7 +59,7 @@ Then open http://localhost:3000 in your browser to access the interactive dashbo
 ## 📁 Project Structure
 
 ```
-gnss-dashboard/
+gnss-tropospheric-pw-interpolator/
 ├── frontend/                 # React frontend application
 │   ├── app/                 # Next.js app directory
 │   ├── components/          # Reusable UI components
@@ -96,8 +96,8 @@ gnss-dashboard/
 **Run the complete system:**
 ```bash
 # Clone repository
-git clone https://github.com/your-username/gnss-dashboard.git
-cd gnss-dashboard
+git clone https://github.com/your-username/gnss-tropospheric-pw-interpolator.git
+cd gnss-tropospheric-pw-interpolator
 
 # Start all services
 docker-compose up --build
@@ -352,9 +352,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Documentation**: Check the [Wiki](https://github.com/your-username/gnss-dashboard/wiki)
-- **Issues**: Report bugs on [GitHub Issues](https://github.com/your-username/gnss-dashboard/issues)
-- **Discussions**: Join [GitHub Discussions](https://github.com/your-username/gnss-dashboard/discussions)
+- **Documentation**: Check the [Wiki](https://github.com/your-username/gnss-tropospheric-pw-interpolator/wiki)
+- **Issues**: Report bugs on [GitHub Issues](https://github.com/your-username/gnss-tropospheric-pw-interpolator/issues)
+- **Discussions**: Join [GitHub Discussions](https://github.com/your-username/gnss-tropospheric-pw-interpolator/discussions)
 
 ## 🔄 Changelog
 
@@ -377,5 +377,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made with ❤️ for the atmospheric science community**
-#   G N S S - T r o p o s p h e r i c - P W - I n t e r p o l a t o r  
+
+---
+
+## 🏆 Hackathon Submission
+
+This is a complete MVP built for hackathon submission, demonstrating:
+- **Full-stack implementation** with React frontend and FastAPI backend
+- **Advanced ML models** for atmospheric science applications
+- **Production-ready deployment** with Docker containerization
+- **Interactive data visualization** with real-time interpolation
+- **Comprehensive testing** and CI/CD pipeline
+
+**Key Innovation**: Real-time GNSS tropospheric water vapor interpolation with uncertainty quantification for meteorological forecasting.
+#   G N S S - T r o p o s p h e r i c - P W - I n t e r p o l a t o r 
+ 
+ #   G N S S - T r o p o s p h e r i c - P W - I n t e r p o l a t o r  
  
