@@ -1,4 +1,4 @@
-aaaaaw# GNSS Tropospheric PW Interpolator
+aaaaaaw# GNSS Tropospheric PW Interpolator
 
 A comprehensive machine learning platform for real-time atmospheric precipitable water (PW) interpolation using GNSS zenith wet delay measurements. This project provides an end-to-end solution for atmospheric scientists studying water vapor distribution using GNSS observations.
 
